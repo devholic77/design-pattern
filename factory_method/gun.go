@@ -1,4 +1,4 @@
-package main
+package factory
 
 type gun struct {
 	name  string

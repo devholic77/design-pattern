@@ -1,8 +1,16 @@
-package main
+package factory
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+	"testing"
+)
 
-func main() {
+func TestMain(m *testing.M) {
+	os.Exit(m.Run())
+}
+
+func TestRun(t *testing.T) {
 	ak47, _ := getGun("ak47")
 	musket, _ := getGun("musket")
 

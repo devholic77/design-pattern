@@ -1,4 +1,4 @@
-package main
+package factory
 
 type ak47 struct {
 	gun

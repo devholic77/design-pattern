@@ -1,4 +1,4 @@
-package main
+package factory
 
 type iGun interface {
 	setName(name string)
