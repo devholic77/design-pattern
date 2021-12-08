@@ -3,6 +3,14 @@ package abfactory
 type adidas struct {
 }
 
+type adidasShirt struct {
+	shirt
+}
+
+type adidasShoe struct {
+	shoe
+}
+
 func (a *adidas) makeShoe() iShoe {
 	return &adidasShoe{
 		shoe: shoe{

@@ -18,7 +18,7 @@ func TestRun(t *testing.T) {
 	printDetails(musket)
 }
 
-func printDetails(g iGun) {
+func printDetails(g Gun) {
 	fmt.Printf("Gun: %s", g.getName())
 	fmt.Println()
 	fmt.Printf("Power: %d", g.getPower())

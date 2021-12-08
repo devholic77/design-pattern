@@ -1,5 +1,12 @@
 package factory
 
+type Gun interface {
+	setName(name string)
+	setPower(power int)
+	getName() string
+	getPower() int
+}
+
 type gun struct {
 	name  string
 	power int

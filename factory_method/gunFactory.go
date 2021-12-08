@@ -2,7 +2,7 @@ package factory
 
 import "fmt"
 
-func getGun(gunType string) (iGun, error) {
+func getGun(gunType string) (Gun, error) {
 	if gunType == "ak47" {
 		return newAk47(), nil
 	}

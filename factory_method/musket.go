@@ -4,7 +4,7 @@ type musket struct {
 	gun
 }
 
-func newMusket() iGun {
+func newMusket() Gun {
 	return &musket{
 		gun: gun{
 			name:  "Musket gun",
