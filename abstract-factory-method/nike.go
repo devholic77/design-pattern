@@ -11,7 +11,7 @@ type nikeShoe struct {
 	shoe
 }
 
-func (n *nike) makeShoe() iShoe {
+func (n *nike) makeShoe() Shoe {
 	return &nikeShoe{
 		shoe: shoe{
 			logo: "nike",
@@ -20,7 +20,7 @@ func (n *nike) makeShoe() iShoe {
 	}
 }
 
-func (n *nike) makeShirt() iShirt {
+func (n *nike) makeShirt() Shirt {
 	return &nikeShirt{
 		shirt: shirt{
 			logo: "nike",

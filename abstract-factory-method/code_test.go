@@ -27,14 +27,14 @@ func TestRun(t *testing.T) {
 	printShirtDetails(adidasShirt)
 }
 
-func printShoeDetails(s iShoe) {
+func printShoeDetails(s Shoe) {
 	fmt.Printf("Logo: %s", s.getLogo())
 	fmt.Println()
 	fmt.Printf("Size: %d", s.getSize())
 	fmt.Println()
 }
 
-func printShirtDetails(s iShirt) {
+func printShirtDetails(s Shirt) {
 	fmt.Printf("Logo: %s", s.getLogo())
 	fmt.Println()
 	fmt.Printf("Size: %d", s.getSize())

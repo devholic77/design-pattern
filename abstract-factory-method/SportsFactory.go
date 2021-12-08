@@ -2,12 +2,12 @@ package abfactory
 
 import "fmt"
 
-type iSportsFactory interface {
-	makeShoe() iShoe
-	makeShirt() iShirt
+type SportsFactory interface {
+	makeShoe() Shoe
+	makeShirt() Shirt
 }
 
-func getSportsFactory(brand string) (iSportsFactory, error) {
+func getSportsFactory(brand string) (SportsFactory, error) {
 	if brand == "adidas" {
 		return &adidas{}, nil
 	}

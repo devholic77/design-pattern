@@ -1,29 +1,29 @@
 package abfactory
 
-type iShirt interface {
+type Shoe interface {
 	setLogo(logo string)
 	setSize(size int)
 	getLogo() string
 	getSize() int
 }
 
-type shirt struct {
+type shoe struct {
 	logo string
 	size int
 }
 
-func (s *shirt) setLogo(logo string) {
+func (s *shoe) setLogo(logo string) {
 	s.logo = logo
 }
 
-func (s *shirt) getLogo() string {
+func (s *shoe) getLogo() string {
 	return s.logo
 }
 
-func (s *shirt) setSize(size int) {
+func (s *shoe) setSize(size int) {
 	s.size = size
 }
 
-func (s *shirt) getSize() int {
+func (s *shoe) getSize() int {
 	return s.size
 }
